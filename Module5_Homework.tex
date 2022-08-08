@@ -1,0 +1,1066 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Module5\_Homework.R},
+  pdfauthor={mmhan\_uricwmy},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Module5\_Homework.R}
+\author{mmhan\_uricwmy}
+\date{2022-08-08}
+
+\begin{document}
+\maketitle
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# =====================================================}
+\CommentTok{\# Module 5 Practice {-} Bivariate Linear Regression}
+\CommentTok{\#                     Supervised Modeling Technique}
+\CommentTok{\# Mike Hankinson}
+\CommentTok{\# October 26, 2021}
+\CommentTok{\# =====================================================}
+
+\CommentTok{\# *****************************************************}
+
+\CommentTok{\# Givens:   }
+    \CommentTok{\# Data Set with values of yearly salary (thousands) and money spent of jewelry (thousands) for }
+    \CommentTok{\# two samples from two different populations: }
+    \CommentTok{\#   i.  Individuals from the city }
+    \CommentTok{\#   ii. Individuals from the suburbs. }
+
+\CommentTok{\# Unknowns: }
+    \CommentTok{\# Perform independent bivariate linear regressions for each sample to predict jewelry spend }
+    \CommentTok{\# using yearly salary. }
+
+\CommentTok{\# Determine:}
+    \CommentTok{\# 1. City Regression:}
+    \CommentTok{\#   a. Report and interpret the slope coefficient for salary.}
+    \CommentTok{\#   b. Report and interpret the intercept coefficient for salary. }
+    \CommentTok{\#      Does this value make sense to you?}
+    \CommentTok{\#   c. Report the t{-}statistic and p{-}value for salary. }
+    \CommentTok{\#      Is salary a significant predictor of jewelry spend in this sample?}
+    \CommentTok{\#   d. Report and interpret the R{-}squared value.}
+    \CommentTok{\# }
+    \CommentTok{\# 2. Suburb Regression}
+    \CommentTok{\#   a. Report and interpret the slope coefficient for salary.}
+    \CommentTok{\#   b. Report and interpret the intercept coefficient for salary. }
+    \CommentTok{\#      Does this value make sense to you?}
+    \CommentTok{\#   c. Report the t{-}statistic and p{-}value for salary. }
+    \CommentTok{\#      Is salary a significant predictor of jewelry spend in this sample?}
+    \CommentTok{\#   d. Report and interpret the R{-}squared value.}
+    \CommentTok{\# }
+    \CommentTok{\# 3. Compare and contrast the effect of salary of jewelry spend in these }
+    \CommentTok{\#    two different populations. Can you explain why we see a difference }
+    \CommentTok{\#    in the slope coefficients in the two regressions?}
+
+\CommentTok{\# *****************************************************}
+
+\CommentTok{\# Process}
+\CommentTok{\# \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}
+\CommentTok{\# 1. Load and Plot Both Sets of Data}
+\CommentTok{\# 2. City Regression:}
+\CommentTok{\#    a. Perform Regression / Obtain Summary (coefficients, T{-}stat, P{-}Value and R\^{}2)}
+\CommentTok{\#    b. Plot Regression Line.}
+\CommentTok{\#    c. Verify Linearity of Model (against defining assumptions)}
+\CommentTok{\#       i. Normality of Residuals}
+\CommentTok{\#           * Plot Histogram of Residuals}
+\CommentTok{\#           * Plot Residuals against Predicted Jewelry Expenditure}
+\CommentTok{\#           * Normal Q{-}Q Plot of Residual Values}
+\CommentTok{\#       ii. Homoscedasticity {-} Constant Variance}
+\CommentTok{\#    d. Determine Confidence Level for B1}
+\CommentTok{\#    e. Evaluate Model Stability: Repeatedly Sample Data (Create 1,000 train/test splits)}
+\CommentTok{\#       Do{-}Loop:}
+\CommentTok{\#       i.   Create train/test sample}
+\CommentTok{\#       ii.  Perform linear regression model on training data}
+\CommentTok{\#       iii. Save B1 coefficient}
+\CommentTok{\#       iv.  Calculate R\^{}2 for test sample as squared correlation between Y from test and}
+\CommentTok{\#            predicted values for test sample (Y\^{}hat). Calculate \% decrease.}
+\CommentTok{\#       Post Do{-}Loop:}
+\CommentTok{\#       v.   Histogram and Summary of drop in R\^{}2}
+\CommentTok{\#       vi.  Evaluate B1 parameter / Build 95\% Confidence Level}
+\CommentTok{\#       vii. Conclusion}
+\CommentTok{\# 3. Suburb Regression:}
+\CommentTok{\#    a. Perform Regression / Obtain Summary (coefficients, T{-}stat, P{-}Value and R\^{}2)}
+\CommentTok{\#    b. Plot Regression Line.}
+\CommentTok{\#    c. Verify Linearity of Model (against defining assumptions)}
+\CommentTok{\#       i. Normality of Residuals}
+\CommentTok{\#           * Plot Histogram of Residuals}
+\CommentTok{\#           * Plot Residuals against Predicted Jewelry Expenditure}
+\CommentTok{\#           * Normal Q{-}Q Plot of Residual Values}
+\CommentTok{\#       ii. Homoscedasticity {-} Constant Variance}
+\CommentTok{\#    d. Determine Confidence Level for B1}
+\CommentTok{\#    e. Evaluate Model Stability: Repeatedly Sample Data (Create 1,000 train/test splits)}
+\CommentTok{\#       Do{-}Loop:}
+\CommentTok{\#       i.   Create train/test sample}
+\CommentTok{\#       ii.  Perform linear regression model on training data}
+\CommentTok{\#       iii. Save B1 coefficient}
+\CommentTok{\#       iv.  Calculate R\^{}2 for test sample as squared correlation between Y from test and}
+\CommentTok{\#            predicted values for test sample (Y\^{}hat). Calculate \% decrease.}
+\CommentTok{\#       Post Do{-}Loop:}
+\CommentTok{\#       v.   Histogram and Summary of drop in R\^{}2}
+\CommentTok{\#       vi.  Evaluate B1 parameter / Build 95\% Confidence Level}
+\CommentTok{\#       vii. Conclusion}
+\CommentTok{\# 4. Model Comparison: City vs. Suburb}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# 1. Load and Plot Both Sets of Data}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{city }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"Assignment5City.csv"}\NormalTok{)}
+\NormalTok{suburb }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"Assignment5Suburb.csv"}\NormalTok{)}
+
+
+\FunctionTok{plot}\NormalTok{(city}\SpecialCharTok{$}\NormalTok{Salary, city}\SpecialCharTok{$}\NormalTok{Jewelry, }\AttributeTok{pch=}\DecValTok{16}\NormalTok{, }\AttributeTok{ylab=}\StringTok{"Jewelry Expenditure ($)"}\NormalTok{, }
+     \AttributeTok{xlab=}\StringTok{"Salary ($)"}\NormalTok{, }\AttributeTok{main=}\StringTok{"Popultion: $suburb"}\NormalTok{ )  }\CommentTok{\#plot(x,y)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Module5_Homework_files/figure-latex/unnamed-chunk-3-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{plot}\NormalTok{(suburb}\SpecialCharTok{$}\NormalTok{Salary, suburb}\SpecialCharTok{$}\NormalTok{Jewelry, }\AttributeTok{pch=}\DecValTok{16}\NormalTok{, }\AttributeTok{ylab=}\StringTok{"Jewelry Expenditure ($)"}\NormalTok{, }
+     \AttributeTok{xlab=}\StringTok{"Salary ($)"}\NormalTok{, }\AttributeTok{main=}\StringTok{"Popultion: Subarb"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Module5_Homework_files/figure-latex/unnamed-chunk-3-2.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# 2. $suburb Regression}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# a. Perform Regression / Obtain Summary (coefficients, T{-}stat, P{-}Value and R\^{}2)}
+\CommentTok{\# ..........................................}
+\NormalTok{city.mod }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(Jewelry }\SpecialCharTok{\textasciitilde{}}\NormalTok{ Salary, city) }\CommentTok{\#lm(y\textasciitilde{}x)}
+
+\FunctionTok{summary}\NormalTok{(city.mod)  }\CommentTok{\# B0 = $4,999 ;B1 = 0.0007 (slope coefficient for X {-}{-} Jewelry Expenditure/Salary)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = Jewelry ~ Salary, data = city)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -149.404  -28.534   -0.313   29.723  120.738 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(>|t|)    
+## (Intercept) 4.999e+03  2.075e+00 2409.07   <2e-16 ***
+## Salary      7.010e-04  2.517e-05   27.85   <2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 40.53 on 1198 degrees of freedom
+## Multiple R-squared:  0.3931, Adjusted R-squared:  0.3926 
+## F-statistic: 775.9 on 1 and 1198 DF,  p-value: < 2.2e-16
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+    \CommentTok{\# Call:}
+    \CommentTok{\#   lm(formula = Jewelry \textasciitilde{} Salary, data = city)}
+    \CommentTok{\# }
+    \CommentTok{\# Residuals:}
+    \CommentTok{\#   Min       1Q   Median       3Q      Max }
+    \CommentTok{\# {-}149.404  {-}28.534   {-}0.313   29.723  120.738 }
+    \CommentTok{\# }
+    \CommentTok{\# Coefficients:}
+    \CommentTok{\#             Estimate    Std. Error     t      value Pr(\textgreater{}|t|)    }
+    \CommentTok{\# (Intercept)   4.999e+03  2.075e+00 2409.07   \textless{}2e{-}16 ***}
+    \CommentTok{\#   Salary      7.010e{-}04  2.517e{-}05   27.85   \textless{}2e{-}16 ***}
+    \CommentTok{\#   {-}{-}{-}}
+    \CommentTok{\#   Signif. codes:  0 \textquotesingle{}***\textquotesingle{} 0.001 \textquotesingle{}**\textquotesingle{} 0.01 \textquotesingle{}*\textquotesingle{} 0.05 \textquotesingle{}.\textquotesingle{} 0.1 \textquotesingle{} \textquotesingle{} 1}
+    \CommentTok{\# }
+    \CommentTok{\# Residual standard error: 40.53 on 1198 degrees of freedom}
+    \CommentTok{\# Multiple R{-}squared:  0.3931,  Adjusted R{-}squared:  0.3926 }
+    \CommentTok{\# F{-}statistic: 775.9 on 1 and 1198 DF,  p{-}value: \textless{} 2.2e{-}16}
+
+
+\FunctionTok{library}\NormalTok{(broom)}
+\NormalTok{betas.city }\OtherTok{\textless{}{-}}\NormalTok{ city.mod}\SpecialCharTok{$}\NormalTok{coefficients}
+\FunctionTok{print}\NormalTok{(betas.city)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  (Intercept)       Salary 
+## 4.998825e+03 7.009760e-04
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{coef}\NormalTok{(}\FunctionTok{summary}\NormalTok{(city.mod))[}\DecValTok{2}\NormalTok{, }\StringTok{"t value"}\NormalTok{]   }\CommentTok{\# Salary t{-}statistic}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 27.85424
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{glance}\NormalTok{(city.mod)}\SpecialCharTok{$}\NormalTok{p.value                }\CommentTok{\# Salary p{-}value}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##         value 
+## 4.636129e-132
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+    \CommentTok{\# Required Data Summary:}
+    \CommentTok{\# B0                   $4999   }
+    \CommentTok{\# B1 Salary               0.000700976   ($ 0.0007 spent on Jewelry per dollar earned)}
+    \CommentTok{\# Salary t{-}statistic     27.85424 }
+    \CommentTok{\# Salary p{-}value        \textless{} 2.2e{-}16 (4.636129e{-}132)}
+    \CommentTok{\# R\^{}2                     0.3931}
+
+    \CommentTok{\# {-} The y{-}intercept of the model (B0, at 0 salary) shows a minimum of $4,998. }
+    \CommentTok{\#   spent on jewelry annually.   }
+    \CommentTok{\# {-} The slope coefficient of 0.00070 states that the population spent an additional}
+    \CommentTok{\#   $ 0.0007 on Jewelry per $1 earned.}
+    \CommentTok{\# {-} The p{-}value is \textless{} 0.001 so the null hypothesis is rejected }
+    \CommentTok{\#   or, test is statistically significant {-}{-} there is correlation between salary}
+    \CommentTok{\#   and jewelry expenditure in City populations}
+    \CommentTok{\# {-} However, an R\^{}2 value shows that 39.3\% of the variability in jewelry spend can}
+    \CommentTok{\#   be attributed to salary.  }
+    \CommentTok{\# {-} We will continue to evaluate the validity of the model by verifying its linearity,}
+    \CommentTok{\#   determining the confidence level of B1 and evaluating its stability through }
+    \CommentTok{\#   repeated sampling.  }
+
+
+\CommentTok{\# b. Plot Regression Line}
+\CommentTok{\# ..........................................}
+
+\FunctionTok{plot}\NormalTok{(city}\SpecialCharTok{$}\NormalTok{Salary, city}\SpecialCharTok{$}\NormalTok{Jewelry, }\AttributeTok{pch=}\DecValTok{16}\NormalTok{, }\AttributeTok{ylab=}\StringTok{"Jewelry Expenditure ($)"}\NormalTok{, }
+     \AttributeTok{xlab=}\StringTok{"Salary ($)"}\NormalTok{, }\AttributeTok{main=}\StringTok{"Popultion: City"}\NormalTok{)}
+\NormalTok{mins.range }\OtherTok{\textless{}{-}}\FunctionTok{floor}\NormalTok{(}\FunctionTok{min}\NormalTok{(city}\SpecialCharTok{$}\NormalTok{Salary))}\SpecialCharTok{:}\FunctionTok{ceiling}\NormalTok{(}\FunctionTok{max}\NormalTok{(city}\SpecialCharTok{$}\NormalTok{Salary))}
+\FunctionTok{lines}\NormalTok{(mins.range, betas.city[}\DecValTok{1}\NormalTok{]}\SpecialCharTok{+}\NormalTok{mins.range}\SpecialCharTok{*}\NormalTok{betas.city[}\DecValTok{2}\NormalTok{], }\AttributeTok{col=}\StringTok{"red"}\NormalTok{, }\AttributeTok{lwd=}\DecValTok{3}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Module5_Homework_files/figure-latex/unnamed-chunk-5-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+    \CommentTok{\# Appear to have found a good fit, but need to analyze the residuals to be certain. }
+    \CommentTok{\# To check if the residuals are normally distributed, and our model complies with }
+    \CommentTok{\# the assumption of normality, let\textquotesingle{}s look at a histogram of the residual values:}
+
+
+\CommentTok{\# c. Verify Linearity of Model (against defining assumptions)}
+\CommentTok{\# ..........................................}
+
+\CommentTok{\# i. Normality of Residuals: Plot Histogram of Residuals and Q{-}Q Plot}
+\CommentTok{\# ..........................................}
+
+\CommentTok{\# *Plot Histogram of Residuals}
+\NormalTok{residuals.city }\OtherTok{\textless{}{-}}\NormalTok{ city.mod}\SpecialCharTok{$}\NormalTok{residuals}
+\FunctionTok{hist}\NormalTok{(residuals.city)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Module5_Homework_files/figure-latex/unnamed-chunk-5-2.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+    \CommentTok{\# The distribution of the residuals looks to have a close to normal distribution {-}{-} }
+    \CommentTok{\# as desired.  }
+
+\CommentTok{\# * Q{-}Q plot of the residual values}
+\FunctionTok{qqnorm}\NormalTok{(residuals.city)}
+\FunctionTok{qqline}\NormalTok{(residuals.city)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Module5_Homework_files/figure-latex/unnamed-chunk-5-3.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+    \CommentTok{\# {-} The Q{-}Q plot shows the theoretical line the residuals should follow }
+    \CommentTok{\#   if normally distributed. }
+    \CommentTok{\# {-} The actual residuals are overlaid, as well. }
+    \CommentTok{\# {-} The residuals begin to slightly deviate from the theoretical distribution at 1.5 on the x{-}axis, }
+    \CommentTok{\#   The desired output us no deviations from{-}2 to 2.}
+    \CommentTok{\# {-} However, since there are only 2 features within this data set, we cannot attempt to }
+    \CommentTok{\#   divide the data into further subsets (to look for linearity within the subsets).}
+
+
+\CommentTok{\# ii. Homoscedasticity {-} Constant Variance of Residuals}
+\CommentTok{\# ..........................................}
+\CommentTok{\# Reminder about Residuals:}
+    \CommentTok{\# {-} the difference between the OBSERVED value and the MEAN VALUE the              }
+    \CommentTok{\#   model predicts for THAT SPECIFIC VALUE.  }
+    \CommentTok{\# {-} It indicates the extent to which a model accounts for the variation within the }
+    \CommentTok{\#   observed data. }
+    \CommentTok{\# {-} The variance of the error term should not depend on X}
+
+
+\CommentTok{\# * Plot Residuals against Predicted Jewelry Expenditure}
+\FunctionTok{plot}\NormalTok{(city.mod}\SpecialCharTok{$}\NormalTok{residuals, city.mod}\SpecialCharTok{$}\NormalTok{fitted.values, }\AttributeTok{pch=}\DecValTok{16}\NormalTok{, }\AttributeTok{xlab=}\StringTok{"Residuals"}\NormalTok{, }\AttributeTok{ylab=}\StringTok{"Predicted Jewelry Expenditure ($)"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Module5_Homework_files/figure-latex/unnamed-chunk-5-4.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+    \CommentTok{\# {-} The plot shows that as Y increases, the range of possible error }
+    \CommentTok{\#   term values remains nearly constant across the x{-}axis.    }
+    \CommentTok{\# {-} This then meets the Homoscedasticity criteria.  }
+
+
+\CommentTok{\# d. Determine Confidence Level for B1}
+\CommentTok{\# ..........................................}
+\CommentTok{\# In a standard normal distribution with a mean = 0 and sd = 1, we expect 95\% }
+\CommentTok{\# of realizations to fall between {-}1.96 and 1.96. In other words, 95\% of the time, }
+\CommentTok{\# a normally distributed variable should be within a 1.96 standard deviation of the mean.}
+\CommentTok{\# Leverage this fact to create a confidence interval for B1:}
+\CommentTok{\#     C.I. = B1 +{-} 1.96*se(B1)}
+\CommentTok{\# The correct interpretation for this confidence interval is that for 95\% of samples, }
+\CommentTok{\# the true value of B1 will be contained in this interval. }
+
+\FunctionTok{confint}\NormalTok{(city.mod)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##                    2.5 %       97.5 %
+## (Intercept) 4.994754e+03 5.002896e+03
+## Salary      6.516019e-04 7.503500e-04
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+    \CommentTok{\#                 2.5 \%           97.5 \%}
+    \CommentTok{\# (Intercept)   49,947         50,029        B0 Min.Jewelry Expenditure, $}
+    \CommentTok{\# Salary        0.00065        0.00075       B1 Jewelry Expenditure/Salary}
+
+
+
+\CommentTok{\# e. Evaluate Model Stability: Repeatedly Sample Data (Create 1,000 train/test splits)}
+\CommentTok{\# ..........................................}
+\CommentTok{\# Repeatedly sample the data, creating 1,000 different train/test splits. }
+\CommentTok{\# For each split, save the estimated B1 coefficient, and record the decrease }
+\CommentTok{\# in R squared between our train and test samples to evaluate the model stability.}
+
+
+\CommentTok{\# Steps i{-}iv {-} Do{-}Loop}
+\CommentTok{\# ..........................................}
+
+\NormalTok{b1.city }\OtherTok{\textless{}{-}}\NormalTok{ rsquared.drop.city }\OtherTok{\textless{}{-}} \FunctionTok{numeric}\NormalTok{ (}\DecValTok{1000}\NormalTok{)}
+\ControlFlowTok{for}\NormalTok{(i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\DecValTok{1000}\NormalTok{)\{}
+\NormalTok{  train.rows.city }\OtherTok{\textless{}{-}} \FunctionTok{sample}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\DecValTok{1000}\NormalTok{, }\DecValTok{650}\NormalTok{)}
+\NormalTok{  train.dat.city }\OtherTok{\textless{}{-}}\NormalTok{ city[train.rows.city,]}
+\NormalTok{  test.dat.city }\OtherTok{\textless{}{-}}\NormalTok{ city[}\SpecialCharTok{{-}}\NormalTok{train.rows.city,]  }\CommentTok{\# All rows BUT train rows.}
+\NormalTok{  lin.city.mod }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(Jewelry }\SpecialCharTok{\textasciitilde{}}\NormalTok{ Salary, }\AttributeTok{data=}\NormalTok{train.dat.city)    }
+\NormalTok{  b1.city[i] }\OtherTok{\textless{}{-}}\NormalTok{ lin.city.mod}\SpecialCharTok{$}\NormalTok{coefficients[}\DecValTok{2}\NormalTok{]}
+\NormalTok{  r.train.city }\OtherTok{\textless{}{-}} \FunctionTok{summary}\NormalTok{(lin.city.mod)}\SpecialCharTok{$}\NormalTok{r.squared}
+\NormalTok{  r.test.city }\OtherTok{\textless{}{-}} \FunctionTok{cor}\NormalTok{(test.dat.city}\SpecialCharTok{$}\NormalTok{Jewelry, }\FunctionTok{predict}\NormalTok{(lin.city.mod, }\AttributeTok{newdata=}\NormalTok{test.dat.city))}\SpecialCharTok{\^{}}\DecValTok{2} 
+\NormalTok{  rsquared.drop.city[i] }\OtherTok{\textless{}{-}}\NormalTok{ (r.train.city}\SpecialCharTok{{-}}\NormalTok{r.test.city)}\SpecialCharTok{/}\NormalTok{r.train.city}
+\NormalTok{\}}
+
+\CommentTok{\# v. Histogram and Summary of drop in R\^{}2}
+\CommentTok{\# ..........................................}
+\FunctionTok{hist}\NormalTok{(rsquared.drop.city)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Module5_Homework_files/figure-latex/unnamed-chunk-5-5.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{summary}\NormalTok{(rsquared.drop.city)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##     Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+## -0.45988 -0.10304 -0.01349 -0.01945  0.07375  0.30141
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+    \CommentTok{\#    Min.    1st Qu.     Median      Mean    3rd Qu.     Max. }
+    \CommentTok{\# {-}0.45442   {-}0.11125   {-}0.01495   {-}0.02983  0.05874    0.30366 }
+
+    \CommentTok{\# Drop in R\^{}2 being is close to to 0\%,}
+    \CommentTok{\# Sometimes, the test model outperforms the trained model. }
+
+
+
+\CommentTok{\# vi. Evaluate B1 parameter / Build 95\% Confidence Level}
+\CommentTok{\# ..........................................}
+\CommentTok{\# Evaluate the B1 parameter, and build a 95\% confidence interval using the mean and }
+\CommentTok{\# standard deviations from the collection of 1,000 possible B1 values.}
+\FunctionTok{hist}\NormalTok{(b1.city)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Module5_Homework_files/figure-latex/unnamed-chunk-5-6.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Repeated Sample Confidence Interval}
+\NormalTok{lower.bound.city }\OtherTok{\textless{}{-}} \FunctionTok{mean}\NormalTok{(b1.city) }\SpecialCharTok{+} \FunctionTok{qt}\NormalTok{(}\FloatTok{0.025}\NormalTok{, }\AttributeTok{df=}\DecValTok{98}\NormalTok{)}\SpecialCharTok{*}\FunctionTok{sd}\NormalTok{(b1.city)   }\CommentTok{\#bottom 2.5\%; qt() {-} Student t Distribution}
+\NormalTok{upper.bound.city }\OtherTok{\textless{}{-}} \FunctionTok{mean}\NormalTok{(b1.city) }\SpecialCharTok{+} \FunctionTok{qt}\NormalTok{(}\FloatTok{0.975}\NormalTok{, }\AttributeTok{df=}\DecValTok{98}\NormalTok{)}\SpecialCharTok{*}\FunctionTok{sd}\NormalTok{(b1.city)   }\CommentTok{\#top 2.5\%}
+
+\NormalTok{lower.bound.city     }\CommentTok{\# [1] 0.0006613527}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 0.0006627916
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{upper.bound.city     }\CommentTok{\# [1] 0.0007412432}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 0.0007403733
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Compare,}
+\CommentTok{\# Model result of B1 vs avg. of 1,000 }
+\FunctionTok{cbind}\NormalTok{(}\AttributeTok{Full\_Model.city=}\NormalTok{betas.city[}\DecValTok{2}\NormalTok{], }\AttributeTok{Repeated\_Sample\_city=}\FunctionTok{mean}\NormalTok{(b1.city))  }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##        Full_Model.city Repeated_Sample_city
+## Salary     0.000700976         0.0007015825
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+    \CommentTok{\#             Full\_Model.city     Repeated\_Sample\_city}
+    \CommentTok{\# Salary       0.000700976         0.0007012979}
+
+
+\FunctionTok{rbind}\NormalTok{(}\AttributeTok{Full\_Model.city=}\FunctionTok{confint}\NormalTok{(city.mod)[}\DecValTok{2}\NormalTok{,], }\AttributeTok{Repeated\_sample\_city=}\FunctionTok{c}\NormalTok{(lower.bound.city, upper.bound.city))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##                             2.5 %       97.5 %
+## Full_Model.city      0.0006516019 0.0007503500
+## Repeated_sample_city 0.0006627916 0.0007403733
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+    \CommentTok{\#                           2.5 \%           97.5 \%}
+    \CommentTok{\# Full\_Model.city       0.000651        0.000750    B1 Jewelry Expenditure/Salary}
+    \CommentTok{\# Repeated\_sample\_city  0.000663        0.000741    B1 Jewelry Expenditure/Salary}
+
+
+\CommentTok{\# vii. Conclusions}
+\CommentTok{\# ..........................................}
+    \CommentTok{\# {-} B1 follows a normal distribution wIth repeated sampling. }
+    \CommentTok{\# {-} The full model  estimate of B1 is nearly identical to B1 calculated from}
+    \CommentTok{\#   the mean of the 1,000 B1 parameters sampled. but that the confidence interval has become tighter. }
+    \CommentTok{\# {-} The confidence interval of the continued sampling B1 is tighter than that of the}
+    \CommentTok{\#   full model. }
+    \CommentTok{\# {-} After repeatedly sampling, the true value of B1 is known to a narrower range.}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# 3. Suburb Regression}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# a. Perform Regression / Obtain Summary}
+\CommentTok{\# ..........................................}
+\NormalTok{suburb.mod }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(Jewelry }\SpecialCharTok{\textasciitilde{}}\NormalTok{ Salary, suburb) }\CommentTok{\#lm(y\textasciitilde{}x)}
+
+\FunctionTok{summary}\NormalTok{(suburb.mod)  }\CommentTok{\# B0 = $4,983 ;B1 = 0.0031 (slope coefficient for X {-}{-} Jewelry Expenditure/Salary)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = Jewelry ~ Salary, data = suburb)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -125.533  -26.529    0.196   25.502  138.066 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(>|t|)    
+## (Intercept) 4.983e+03  1.092e+01  456.45   <2e-16 ***
+## Salary      3.105e-03  1.276e-04   24.34   <2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 39.64 on 998 degrees of freedom
+## Multiple R-squared:  0.3726, Adjusted R-squared:  0.3719 
+## F-statistic: 592.6 on 1 and 998 DF,  p-value: < 2.2e-16
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+    \CommentTok{\# Call:}
+    \CommentTok{\#   lm(formula = Jewelry \textasciitilde{} Salary, data = suburb)}
+    \CommentTok{\# }
+    \CommentTok{\# Residuals:}
+    \CommentTok{\#   Min       1Q   Median       3Q      Max }
+    \CommentTok{\# {-}125.533  {-}26.529    0.196   25.502  138.066 }
+    \CommentTok{\# }
+    \CommentTok{\# Coefficients:}
+    \CommentTok{\#             Estimate Std.     Error      t value       Pr(\textgreater{}|t|)    }
+    \CommentTok{\# (Intercept)   4.983e+03      1.092e+01    456.45      \textless{}2e{-}16 ***}
+    \CommentTok{\#   Salary      3.105e{-}03      1.276e{-}04     24.34      \textless{}2e{-}16 ***}
+    \CommentTok{\#   {-}{-}{-}}
+    \CommentTok{\#   Signif. codes:  0 \textquotesingle{}***\textquotesingle{} 0.001 \textquotesingle{}**\textquotesingle{} 0.01 \textquotesingle{}*\textquotesingle{} 0.05 \textquotesingle{}.\textquotesingle{} 0.1 \textquotesingle{} \textquotesingle{} 1}
+    \CommentTok{\# }
+    \CommentTok{\# Residual standard error: 39.64 on 998 degrees of freedom}
+    \CommentTok{\# Multiple R{-}squared:  0.3726,  Adjusted R{-}squared:  0.3719 }
+    \CommentTok{\# F{-}statistic: 592.6 on 1 and 998 DF,  p{-}value: \textless{} 2.2e{-}16 }
+
+
+
+\FunctionTok{library}\NormalTok{(broom)}
+\NormalTok{betas.suburb }\OtherTok{\textless{}{-}}\NormalTok{ suburb.mod}\SpecialCharTok{$}\NormalTok{coefficients}
+\FunctionTok{print}\NormalTok{(betas.suburb)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  (Intercept)       Salary 
+## 4.983096e+03 3.105394e-03
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{coef}\NormalTok{(}\FunctionTok{summary}\NormalTok{(suburb.mod))[}\DecValTok{2}\NormalTok{, }\StringTok{"t value"}\NormalTok{]   }\CommentTok{\# Salary t{-}statistic}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 24.34363
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{glance}\NormalTok{(suburb.mod)}\SpecialCharTok{$}\NormalTok{p.value                }\CommentTok{\# Salary p{-}value}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##         value 
+## 3.994508e-103
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+    \CommentTok{\# Required Data Summary:}
+    \CommentTok{\# B0                 $4,983.}
+    \CommentTok{\# B1 Salary               0.00310}
+    \CommentTok{\# Salary t{-}statistic     24.34363 }
+    \CommentTok{\# Salary p{-}value        \textless{} 2.2e{-}16 (3.994508e{-}103)}
+    \CommentTok{\# R\^{}2                     0.3726}
+    
+    
+    \CommentTok{\# {-} The y{-}intercept of the model (B0, at 0 salary) shows a minimum of $4,983 }
+    \CommentTok{\#   spent on jewelry annually.   }
+    \CommentTok{\# {-} The slope coefficient of 0.0031 states that the population spent an additional}
+    \CommentTok{\#   $ 0.0031 on Jewelry per $1 earned.}
+    \CommentTok{\# {-} The p{-}value is \textless{} 0.001 so the null hypothesis is rejected }
+    \CommentTok{\#   or, test is statistically significant {-}{-} there is correlation between salary}
+    \CommentTok{\#   and jewelry expenditure in City populations}
+    \CommentTok{\# {-} However, an R\^{}2 value shows that 39.6\% of the variability in jewelry spend can}
+    \CommentTok{\#   be attributed to salary.  }
+    \CommentTok{\# {-} We will continue to evaluate the validity of the model by verifying its linearity,}
+    \CommentTok{\#   determining the confidence level of B1 and evaluating its stability through }
+    \CommentTok{\#   repeated sampling.  }
+
+
+
+\CommentTok{\# b. Plot Regression Line}
+\CommentTok{\# ..........................................}
+\NormalTok{betas.suburb }\OtherTok{\textless{}{-}}\NormalTok{ suburb.mod}\SpecialCharTok{$}\NormalTok{coefficients}
+\FunctionTok{print}\NormalTok{(betas.suburb)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  (Intercept)       Salary 
+## 4.983096e+03 3.105394e-03
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+      \CommentTok{\# (Intercept)                     Salary }
+      \CommentTok{\# 4.983096e+03                  3.105394e{-}03 }
+      \CommentTok{\# Jewelry Expenditure @ 0       Jewelry Expenditure/Salary}
+
+
+\FunctionTok{plot}\NormalTok{(suburb}\SpecialCharTok{$}\NormalTok{Salary, suburb}\SpecialCharTok{$}\NormalTok{Jewelry, }\AttributeTok{pch=}\DecValTok{16}\NormalTok{, }\AttributeTok{ylab=}\StringTok{"Jewelry Expenditure ($)"}\NormalTok{, }
+     \AttributeTok{xlab=}\StringTok{"Salary ($)"}\NormalTok{, }\AttributeTok{main=}\StringTok{"Popultion: Suburb"}\NormalTok{)}
+\NormalTok{mins.range }\OtherTok{\textless{}{-}}\FunctionTok{floor}\NormalTok{(}\FunctionTok{min}\NormalTok{(suburb}\SpecialCharTok{$}\NormalTok{Salary))}\SpecialCharTok{:}\FunctionTok{ceiling}\NormalTok{(}\FunctionTok{max}\NormalTok{(suburb}\SpecialCharTok{$}\NormalTok{Salary))}
+\FunctionTok{lines}\NormalTok{(mins.range, betas.suburb[}\DecValTok{1}\NormalTok{]}\SpecialCharTok{+}\NormalTok{mins.range}\SpecialCharTok{*}\NormalTok{betas.suburb[}\DecValTok{2}\NormalTok{], }\AttributeTok{col=}\StringTok{"red"}\NormalTok{, }\AttributeTok{lwd=}\DecValTok{3}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Module5_Homework_files/figure-latex/unnamed-chunk-7-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+    \CommentTok{\# Appear to have found a good fit, but need to analyze the residuals to be certain. }
+    \CommentTok{\# To check if the residuals are normally distributed, and our model complies with }
+    \CommentTok{\# the assumption of normality, let\textquotesingle{}s look at a histogram of the residual values:}
+
+
+\CommentTok{\# c. Verify Linearity of Model (against defining assumptions)}
+\CommentTok{\# ..........................................}
+
+\CommentTok{\# i. Normality of Residuals: Plot Histogram of Residuals and Q{-}Q Plot}
+\CommentTok{\# ..........................................}
+
+\CommentTok{\# *Plot Histogram of Residuals}
+\NormalTok{residuals.suburb }\OtherTok{\textless{}{-}}\NormalTok{ suburb.mod}\SpecialCharTok{$}\NormalTok{residuals}
+\FunctionTok{hist}\NormalTok{(residuals.suburb)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Module5_Homework_files/figure-latex/unnamed-chunk-7-2.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+    \CommentTok{\# The distribution of the residuals appears fairly normal. Maybe a little left side heavy}
+
+\CommentTok{\# * Q{-}Q plot of the residual values}
+\FunctionTok{qqnorm}\NormalTok{(residuals.suburb)}
+\FunctionTok{qqline}\NormalTok{(residuals.suburb)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Module5_Homework_files/figure-latex/unnamed-chunk-7-3.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+    \CommentTok{\# {-} The Q{-}Q plot shows the theoretical line the residuals should follow }
+    \CommentTok{\#   if normally distributed. }
+    \CommentTok{\# {-} The actual residuals are overlaid, as well.}
+    \CommentTok{\# {-} The residuals don\textquotesingle{}t deviate from the theoretical distribution in the range on the x{-}axis, }
+    \CommentTok{\#   from {-}2 to 2, which demonstrates normaility of the residuals.}
+
+
+\CommentTok{\# ii. Homoscedasticity {-} Constant Variance of Residuals}
+\CommentTok{\# ..........................................}
+\CommentTok{\# Reminder about Residuals:}
+    \CommentTok{\# {-} the difference between the OBSERVED value and the MEAN VALUE the              }
+    \CommentTok{\#   model predicts for THAT SPECIFIC VALUE.  }
+    \CommentTok{\# {-} It indicates the extent to which a model accounts for the variation within the }
+    \CommentTok{\#   observed data. }
+    \CommentTok{\# {-} The variance of the error term should not depend on X}
+
+
+\CommentTok{\# * Plot Residuals against Predicted Jewelry Expenditure}
+\FunctionTok{plot}\NormalTok{(suburb.mod}\SpecialCharTok{$}\NormalTok{residuals, suburb.mod}\SpecialCharTok{$}\NormalTok{fitted.values, }\AttributeTok{pch=}\DecValTok{16}\NormalTok{, }\AttributeTok{xlab=}\StringTok{"Residuals"}\NormalTok{, }\AttributeTok{ylab=}\StringTok{"Predicted Jewelry Expenditure ($)"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Module5_Homework_files/figure-latex/unnamed-chunk-7-4.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+    \CommentTok{\# {-} The plot shows that as Y increases, the range of possible error }
+    \CommentTok{\#   term values remains nearly constant across the x{-}axis.    }
+    \CommentTok{\# {-} This then meets the Homoscedasticity criteria.   }
+
+
+\CommentTok{\# d. Determine Confidence Level for B1}
+\CommentTok{\# ..........................................}
+\CommentTok{\# In a standard normal distribution with a mean = 0 and sd = 1, we expect 95\% }
+\CommentTok{\# of realizations to fall between {-}1.96 and 1.96. In other words, 95\% of the time, }
+\CommentTok{\# a normally distributed variable should be within a 1.96 standard deviation of the mean.}
+\CommentTok{\# Leverage this fact to create a confidence interval for B1:}
+\CommentTok{\#     C.I. = B1 +{-} 1.96*se(B1)}
+\CommentTok{\# The correct interpretation for this confidence interval is that for 95\% of samples, }
+\CommentTok{\# the true value of B1 will be contained in this interval. }
+
+\FunctionTok{confint}\NormalTok{(suburb.mod)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##                    2.5 %       97.5 %
+## (Intercept) 4.961673e+03 5.004519e+03
+## Salary      2.855067e-03 3.355720e-03
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#               2.5 \%         97.5 \%}
+\CommentTok{\# (Intercept) 4961.672567   5004.51878    B0 Min. Jewelry Expenditure}
+\CommentTok{\# Salary         0.002855      0.00335    B1 Jewelry Expenditure/Salary}
+
+
+
+\CommentTok{\# e. Evaluate Model Stability: Repeatedly Sample Data (Create 1,000 train/test splits)}
+\CommentTok{\# ..........................................}
+\CommentTok{\# Repeatedly sample the data, creating 1,000 different train/test splits. }
+\CommentTok{\# For each split, save the estimated B1 coefficient, and record the decrease }
+\CommentTok{\# in R squared between our train and test samples to evaluate the model stability.}
+
+
+\CommentTok{\# Steps i{-}iv {-} Do{-}Loop}
+\CommentTok{\# ..........................................}
+
+\NormalTok{b1.suburb }\OtherTok{\textless{}{-}}\NormalTok{ rsquared.drop.suburb }\OtherTok{\textless{}{-}} \FunctionTok{numeric}\NormalTok{ (}\DecValTok{1000}\NormalTok{)}
+\ControlFlowTok{for}\NormalTok{(i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\DecValTok{1000}\NormalTok{)\{}
+\NormalTok{  train.rows.suburb }\OtherTok{\textless{}{-}} \FunctionTok{sample}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\DecValTok{1000}\NormalTok{, }\DecValTok{650}\NormalTok{)}
+\NormalTok{  train.dat.suburb }\OtherTok{\textless{}{-}}\NormalTok{ suburb[train.rows.suburb,]}
+\NormalTok{  test.dat.suburb }\OtherTok{\textless{}{-}}\NormalTok{ suburb[}\SpecialCharTok{{-}}\NormalTok{train.rows.suburb,]  }\CommentTok{\# All rows BUT train rows.}
+\NormalTok{  lin.suburb.mod }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(Jewelry }\SpecialCharTok{\textasciitilde{}}\NormalTok{ Salary, }\AttributeTok{data=}\NormalTok{train.dat.suburb)    }
+\NormalTok{  b1.suburb[i] }\OtherTok{\textless{}{-}}\NormalTok{ lin.suburb.mod}\SpecialCharTok{$}\NormalTok{coefficients[}\DecValTok{2}\NormalTok{]}
+\NormalTok{  r.train.suburb }\OtherTok{\textless{}{-}} \FunctionTok{summary}\NormalTok{(lin.suburb.mod)}\SpecialCharTok{$}\NormalTok{r.squared}
+\NormalTok{  r.test.suburb }\OtherTok{\textless{}{-}} \FunctionTok{cor}\NormalTok{(test.dat.suburb}\SpecialCharTok{$}\NormalTok{Jewelry, }\FunctionTok{predict}\NormalTok{(lin.suburb.mod, }\AttributeTok{newdata=}\NormalTok{test.dat.suburb))}\SpecialCharTok{\^{}}\DecValTok{2} 
+\NormalTok{  rsquared.drop.suburb[i] }\OtherTok{\textless{}{-}}\NormalTok{ (r.train.suburb}\SpecialCharTok{{-}}\NormalTok{r.test.suburb)}\SpecialCharTok{/}\NormalTok{r.train.suburb}
+\NormalTok{\}}
+
+\CommentTok{\# v. Histogram and Summary of drop in R\^{}2}
+\CommentTok{\# ..........................................}
+\FunctionTok{hist}\NormalTok{(rsquared.drop.suburb)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Module5_Homework_files/figure-latex/unnamed-chunk-7-5.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{summary}\NormalTok{(rsquared.drop.suburb)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
+## -0.529385 -0.095871  0.005167 -0.005348  0.084576  0.462680
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+    \CommentTok{\#     Min.   1st Qu.    Median      Mean   3rd Qu.      Max. }
+    \CommentTok{\# {-}0.499345 {-}0.090576  0.003509 {-}0.003699  0.090816  0.513282 }
+
+    \CommentTok{\# Drop in R\^{}2 being is close to to 0\%,}
+    \CommentTok{\# Sometimes, the test model outperforms the trained model.  }
+
+
+
+\CommentTok{\# vi. Evaluate B1 parameter / Build 95\% Confidence Level}
+\CommentTok{\# ..........................................}
+\CommentTok{\# Evaluate the B1 parameter, and build a 95\% confidence interval using the mean and }
+\CommentTok{\# standard deviations from the collection of 1,000 possible B1 values.}
+\FunctionTok{hist}\NormalTok{(b1.suburb)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Module5_Homework_files/figure-latex/unnamed-chunk-7-6.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Repeated Sample Confidence Interval}
+\NormalTok{lower.bound.suburb }\OtherTok{\textless{}{-}} \FunctionTok{mean}\NormalTok{(b1.suburb) }\SpecialCharTok{+} \FunctionTok{qt}\NormalTok{(}\FloatTok{0.025}\NormalTok{, }\AttributeTok{df=}\DecValTok{98}\NormalTok{)}\SpecialCharTok{*}\FunctionTok{sd}\NormalTok{(b1.suburb)   }\CommentTok{\#bottom 2.5\%; qt() {-} Student t Distribution}
+\NormalTok{upper.bound.suburb }\OtherTok{\textless{}{-}} \FunctionTok{mean}\NormalTok{(b1.suburb) }\SpecialCharTok{+} \FunctionTok{qt}\NormalTok{(}\FloatTok{0.975}\NormalTok{, }\AttributeTok{df=}\DecValTok{98}\NormalTok{)}\SpecialCharTok{*}\FunctionTok{sd}\NormalTok{(b1.suburb)   }\CommentTok{\#top 2.5\%}
+
+\NormalTok{lower.bound.suburb     }\CommentTok{\# [1] 0.002934469}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 0.002924612
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{upper.bound.suburb     }\CommentTok{\# [1] 0.003275835}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 0.003287753
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Compare,}
+\CommentTok{\# Model result of B1 vs avg. of 1,000 }
+\FunctionTok{cbind}\NormalTok{(}\AttributeTok{Full\_Model.suburb=}\NormalTok{betas.suburb[}\DecValTok{2}\NormalTok{], }\AttributeTok{Repeated\_Sample\_suburb=}\FunctionTok{mean}\NormalTok{(b1.suburb))  }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##        Full_Model.suburb Repeated_Sample_suburb
+## Salary       0.003105394            0.003106183
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+    \CommentTok{\#           Full\_Model.suburb     Repeated\_Sample\_suburb}
+    \CommentTok{\# Salary         0.003105394              0.003105358}
+
+
+\FunctionTok{rbind}\NormalTok{(}\AttributeTok{Full\_Model.suburb=}\FunctionTok{confint}\NormalTok{(suburb.mod)[}\DecValTok{2}\NormalTok{,], }\AttributeTok{Repeated\_sample\_suburb=}\FunctionTok{c}\NormalTok{(lower.bound.suburb, upper.bound.suburb))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##                              2.5 %      97.5 %
+## Full_Model.suburb      0.002855067 0.003355720
+## Repeated_sample_suburb 0.002924612 0.003287753
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+    \CommentTok{\#                               2.5 \%       97.5 \%}
+    \CommentTok{\# Full\_Model.suburb       0.002855067     0.003355720   B1 Jewelry Expenditure/Salary}
+    \CommentTok{\# Repeated\_sample\_suburb  0.002921949     0.003288767   B1 Jewelry Expenditure/Salary}
+
+
+
+\CommentTok{\# vii. Conclusions}
+\CommentTok{\# ..........................................}
+    \CommentTok{\# {-} In terms of sampling, SUBURB results followed same TREND as did CITY.  }
+    \CommentTok{\# {-} B1 follows a normal distribution wIth repeated sampling. }
+    \CommentTok{\# {-} The full model  estimate of B1 is nearly identical to B1 calculated from}
+    \CommentTok{\#   the mean of the 1,000 B1 parameters sampled. but that the confidence interval has become tighter. }
+    \CommentTok{\# {-} The confidence interval of the continued sampling B1 is tighter than that of the}
+    \CommentTok{\#   full model. }
+    \CommentTok{\# {-} After repeatedly sampling, the true value of B1 is known to a narrower range.}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# 4. Model Comparison: City vs. Suburb}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# DATA SUMMARY:                   CITY                     SUBURB}
+\CommentTok{\# .......................................................................}
+\CommentTok{\# B0                          $4999.                  $4,983.}
+\CommentTok{\# B1 Salary                       0.000700                 0.003105}
+\CommentTok{\# Salary t{-}statistic             27.85424                 24.34363}
+\CommentTok{\# Salary p{-}value                \textless{} 2.2e{-}16                \textless{} 2.2e{-}16    }
+\CommentTok{\# R\^{}2                             0.3931                   0.3726}
+\CommentTok{\# Salary Full\_Model               0.000700                 0.003105                   }
+\CommentTok{\# Repeated\_Sample                 0.000701                 0.003105}
+\CommentTok{\# Full\_Model  2.5\%                0.000651                 0.002855    }
+\CommentTok{\# Full\_Model 97.5\%                0.000750                 0.003355   }
+\CommentTok{\# Repeated\_sample 2.5\%            0.000663                 0.002921       }
+\CommentTok{\# Repeated\_sample 97.5\%           0.000741                 0.003288}
+
+
+
+\CommentTok{\# The data for both city and suburb populations is similar.  }
+\CommentTok{\# {-} Baseline spend (y{-}intercept) is only $16 different between the 2 populations. }
+\CommentTok{\# {-} Both groups reject the null hypothesis.  There is a definitive relationship}
+\CommentTok{\#   between salary and jewelry spend.  }
+\CommentTok{\# {-} Both models\textquotesingle{} jewelry spend variability can only slightly be attributed to }
+\CommentTok{\#   salary (39\% City, 37\% suburb).}
+\CommentTok{\# {-} Those that live in the suburb spend much more than those that live in }
+\CommentTok{\#   the city above the base of B0....}
+\CommentTok{\#       * City B1 at $0.70 per $1,000 earned }
+\CommentTok{\#       * Suburb B1 at $3.10 per $1,000 earned }
+
+
+
+\CommentTok{\#grid}
+\FunctionTok{par}\NormalTok{(}\AttributeTok{mfrow=}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{))}
+\CommentTok{\#plot1}
+\FunctionTok{plot}\NormalTok{(city}\SpecialCharTok{$}\NormalTok{Salary, city}\SpecialCharTok{$}\NormalTok{Jewelry, }\AttributeTok{pch=}\DecValTok{16}\NormalTok{, }\AttributeTok{ylab=}\StringTok{"Jewelry Expenditure ($)"}\NormalTok{, }
+     \AttributeTok{xlab=}\StringTok{"Salary ($)"}\NormalTok{, }\AttributeTok{main=}\StringTok{"Popultion: City"}\NormalTok{)}
+\NormalTok{mins.range }\OtherTok{\textless{}{-}}\FunctionTok{floor}\NormalTok{(}\FunctionTok{min}\NormalTok{(city}\SpecialCharTok{$}\NormalTok{Salary))}\SpecialCharTok{:}\FunctionTok{ceiling}\NormalTok{(}\FunctionTok{max}\NormalTok{(city}\SpecialCharTok{$}\NormalTok{Salary))}
+\FunctionTok{lines}\NormalTok{(mins.range, betas.city[}\DecValTok{1}\NormalTok{]}\SpecialCharTok{+}\NormalTok{mins.range}\SpecialCharTok{*}\NormalTok{betas.city[}\DecValTok{2}\NormalTok{], }\AttributeTok{col=}\StringTok{"red"}\NormalTok{, }\AttributeTok{lwd=}\DecValTok{3}\NormalTok{)}
+
+\CommentTok{\#plot2}
+\FunctionTok{plot}\NormalTok{(suburb}\SpecialCharTok{$}\NormalTok{Salary, suburb}\SpecialCharTok{$}\NormalTok{Jewelry, }\AttributeTok{pch=}\DecValTok{16}\NormalTok{, }\AttributeTok{ylab=}\StringTok{"Jewelry Expenditure ($)"}\NormalTok{, }
+     \AttributeTok{xlab=}\StringTok{"Salary ($)"}\NormalTok{, }\AttributeTok{main=}\StringTok{"Popultion: Suburb"}\NormalTok{)}
+\NormalTok{mins.range }\OtherTok{\textless{}{-}}\FunctionTok{floor}\NormalTok{(}\FunctionTok{min}\NormalTok{(suburb}\SpecialCharTok{$}\NormalTok{Salary))}\SpecialCharTok{:}\FunctionTok{ceiling}\NormalTok{(}\FunctionTok{max}\NormalTok{(suburb}\SpecialCharTok{$}\NormalTok{Salary))}
+\FunctionTok{lines}\NormalTok{(mins.range, betas.suburb[}\DecValTok{1}\NormalTok{]}\SpecialCharTok{+}\NormalTok{mins.range}\SpecialCharTok{*}\NormalTok{betas.suburb[}\DecValTok{2}\NormalTok{], }\AttributeTok{col=}\StringTok{"red"}\NormalTok{, }\AttributeTok{lwd=}\DecValTok{3}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Module5_Homework_files/figure-latex/unnamed-chunk-9-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Functions Used}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# lm()          Fitting Linear Models}
+
+\CommentTok{\# summary()     summary is a generic function used to produce result summaries }
+\CommentTok{\#               of the results of various model fitting functions. }
+\CommentTok{\#               The function invokes particular methods which depend on the class }
+\CommentTok{\#               of the first argument.}
+
+\CommentTok{\# floor()      floor takes a single numeric argument x and returns a }
+\CommentTok{\#              numeric vector containing the largest integers not }
+\CommentTok{\#              greater than the corresponding elements of x.  }
+
+\CommentTok{\# ceiling()    takes a single numeric argument x and returns a numeric vector }
+\CommentTok{\#              containing the smallest integers not less than the corresponding }
+\CommentTok{\#              elements of x}
+
+\CommentTok{\# c()          Combine Values into a Vector or List}
+
+\CommentTok{\# predict()    generic function for predictions from the results of various }
+\CommentTok{\#              model fitting functions. The function invokes particular methods }
+\CommentTok{\#              which depend on the class of the first argument.}
+\CommentTok{\#}
+\CommentTok{\# newdata =   within predict(), An optional data frame in which to look for }
+\CommentTok{\#             variables with which to predict. }
+\CommentTok{\#             If omitted, the fitted values are used.}
+
+\CommentTok{\# confint()   Confidence Intervals for Model Parameters}
+\CommentTok{\# sample()    Random Samples.....sample(x, size)}
+\CommentTok{\# qt()        Student t Distribution}
+
+\CommentTok{\# par()       Set or Query Graphical Parameters.}
+\CommentTok{\#             set by specifying them as arguments to par in tag = value form, }
+\CommentTok{\#             or by passing them as a list of tagged values.}
+
+\CommentTok{\# which()     Give the TRUE indices of a logical object, allowing for array indices.}
+
+
+
+
+\CommentTok{\# rm(list = ls())      Removes global environment}
+\end{Highlighting}
+\end{Shaded}
+
+
+\end{document}
