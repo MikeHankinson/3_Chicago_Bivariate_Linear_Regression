@@ -14,26 +14,75 @@
      * Correlation vs. Causation
 
 ### Context
-Having an inadequate sample size or a lack of explanatory variables are often hindrances to performing successful analyses. However, having access to an excessive amount of data can often be an issue as well. When examining data sets with a large number of variables, it can be difficult to uncover patterns within the data set and select a combination of predictors that will identify meaningful signals.
-
-Use this PCA technique to reduce the number of variables needed for modeling.
+The linear model is a foundational statistical tool that enables performance of supervised modelling (creating a function that maps one or more explanatory variables to a specific target variable). Using the linear model, evaluate the correlation between pairs of variables and quantify the effect one variable has on another.
 
 ### Problem Statement
-Perform Principal Component Analysis to analyze the exercise performance variables in an athlete dataset.
-   * Produce a correlation matrix of the variables.
-   * Perform PCA and analyze the VAF by each factor. Include an elbow plot.
-   * Interpret the first loading using loadings plot.
-   * Use a bi plot of the first two factors and loadings and/or other visualizations to identify unique individuals.
+Develop linear model given the following:
+
+1. City Regression:
+    * Report and interpret the slope coefficient for salary.
+    * Report and interpret the intercept coefficient for salary. 
+    * Report the t-statistic and p-value for salary. 
+    * Report and interpret the R-squared value.    
+2. Suburb Regression
+    * Report and interpret the slope coefficient for salary.
+    * Report and interpret the intercept coefficient for salary. 
+    * Report the t-statistic and p-value for salary. 
+    * Report and interpret the R-squared value.
+3. Compare and contrast the effect of salary of jewelry spend in these two different populations. Explain the difference in the slope coefficients in the two regressions?
 
 ### Algorithm Methodology
-1.	Load and Scale Data 
-2.	Perform PCA 
-3.	Create Covariance and Correlation Matrices
-4.	Select the Number of Factors
-5.	Plot Factors and Loadings
-6. Extract Insights
-7. Bi plot of Loadings and Component scores
-8. Discussion  
+1. Load and Plot Both Sets of Data
+
+2. City Regression:
+    * Perform Regression / Obtain Summary (coefficients, T-stat, P-Value and R^2)
+    * Plot Regression Line.
+    * Verify Linearity of Model (against defining assumptions)
+        - Normality of Residuals
+           * Plot Histogram of Residuals
+           * Plot Residuals against Predicted Jewelry Expenditure
+           * Normal Q-Q Plot of Residual Values
+        - Homoscedasticity - Constant Variance
+    * Determine Confidence Level for B1
+    * Evaluate Model Stability: Repeatedly Sample Data (Create 1,000 train/test splits)
+        
+        Do-Loop:
+        - Create train/test sample
+        - Perform linear regression model on training data
+        - Save B1 coefficient
+        - Calculate R^2 for test sample as squared correlation between Y from test and
+            predicted values for test sample (Y^hat). Calculate % decrease.
+        
+        Post Do-Loop:
+        - Histogram and Summary of drop in R^2
+        - Evaluate B1 parameter / Build 95% Confidence Level
+        - Conclusion
+       
+3. Suburb Regression:
+    * Perform Regression / Obtain Summary (coefficients, T-stat, P-Value and R^2)
+    * Plot Regression Line.
+    * Verify Linearity of Model (against defining assumptions)
+        - Normality of Residuals
+            * Plot Histogram of Residuals
+            * Plot Residuals against Predicted Jewelry Expenditure
+            * Normal Q-Q Plot of Residual Values
+        - Homoscedasticity - Constant Variance
+    * Determine Confidence Level for B1
+    * Evaluate Model Stability: Repeatedly Sample Data (Create 1,000 train/test splits)
+        
+        Do-Loop:
+        - Create train/test sample
+        - Perform linear regression model on training data
+        - Save B1 coefficient
+        - Calculate R^2 for test sample as squared correlation between Y from test and predicted values for test sample (Y^hat). Calculate % decrease.
+        
+        Post Do-Loop:
+        - Histogram and Summary of drop in R^2
+        - Evaluate B1 parameter / Build 95% Confidence Level
+        - Conclusion
+      
+4. Model Comparison: City vs. Suburb
+
 
 ### Results
 All code to complete this work is found in the attached [notebook](Module4_HomeWork.R).
