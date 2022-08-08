@@ -85,7 +85,7 @@ Develop linear model given the following:
 
 
 ### Results
-All code to complete this work is found in the attached [notebook](Module5_Homework.R).
+All code to complete this work is found in the attached [notebook](Module5_Homework.R) or with pictures [Word File](Module5_Homework.docx).
 
 
 
